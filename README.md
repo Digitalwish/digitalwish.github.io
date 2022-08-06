@@ -1,2 +1,2 @@
-# username.github.io
+# digitalwish.github.io
 Github Public page
