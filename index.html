@@ -19,18 +19,32 @@
 			<div id="overlay"></div>
 			<div id="main">
 
+
+				 
 				
 				<!-- Header -->
-				<iframe id="odysee-iframe" src="https://odysee.com/$/embed/Introduction/b68721b96828229a4665b7156a3bd0885f940aba?r=9hfd4b6LWi9ZZShzyt3p6qq58k7BL95g?start=0&end=68;rel=0&amp;showinfo=0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0%;left:0px;left:10%;bottom:0px !important" height="100%" width="100%"></iframe>
-					
+				<video id = "myVideo" poster="assets/dw.png" playsinline >
+					<source src="assets/DWMotivation.mp4" type="video/mp4">
+				  </video>
+
+			<!--	<iframe id="odysee-iframe" src="https://odysee.com/$/embed/Introduction/b68721b96828229a4665b7156a3bd0885f940aba?r=9hfd4b6LWi9ZZShzyt3p6qq58k7BL95g?start=0&end=68;rel=0&amp;showinfo=0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0%;left:0px;bottom:0px !important" height="100%" width="100%"></iframe>
+				-->	
+
+				<button class="fa fa-video" style="
+				font-size: xxx-large;
+				float: left;
+				left: 2%;
+				top: 4%;
+			"></button>
+
+
 				<header id="header"  style = "
-					top:0%;
-					right:45%;">
+					top:-40%;
+					right:0%;">
 							
-					<p>ABOUT US</p>
 						<nav>
 							<ul>
-								<li><a href="https://digitalwish.pt/" class="fa fa-home" target="_blank"><span class="label">Digitalwish.pt</span></a></li>
+								<li><a href="https://digitalwish.pt/" class="fa fa-link" target="_blank"><span class="label">Digitalwish.pt</span></a></li>
 								<li><a href="https://www.linkedin.com/company/82989159/admin/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
 								<li><a href="mailto:hi@digitalwish.pt" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
 								<li><a href="https://www.facebook.com/digitalwish.pt/" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
@@ -39,14 +53,9 @@
 								
 							</ul>
 						</nav>
-								
+						<span class="copyright"><a href="https://digitalwish.pt" target = "_blank">&copy DigitalWish</a>&nbsp;&bull;&nbsp;All rights reserved</span>			
 						
 					</header>
-
-				<!-- Footer -->
-				<footer id="footer">
-					<span class="copyright" style="float:left;padding-left: 1%;"><a href="https://digitalwish.pt" target = "_blank">&copy DigitalWish</a>&nbsp;&bull;&nbsp;All rights reserved</span>
-				</footer>
 
 			</div>
 		</div>
@@ -54,26 +63,21 @@
 			window.onload = function() { document.body.classList.remove('is-preload'); }
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	<script>
-		// Get the video
-		var video = document.getElementById("odysee-iframe");
 		
-		// Get the button
-		var btn = document.getElementById("myBtn");
+			var vid = document.getElementById("myVideo");
+			let btn = document.querySelector("button");
+			let div = document.querySelector("header");
+			btn.addEventListener("click", () => {
+  			if (div.style.display === "none") {
+				div.style.display = "inline-block";
+  }			 else {
+    		div.style.display = "none";
+			vid.play();
+  }
+});
 		
-		// Pause and play the video, and change the button text
-		function myFunction() {
-		  if (video.paused) {
-			video.play();
-			btn.innerHTML = "Pause";
-		  } else {
-			video.pause();
-			btn.innerHTML = "Play";
-		  }
-		}
+		
+		
 		</script>
-
-
 	</body>
 </html>
