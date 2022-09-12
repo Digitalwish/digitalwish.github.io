@@ -1081,7 +1081,7 @@ input, select, textarea {
 		} }
 
 		/* Style the video: 100% width and height to cover the entire window */
-#odysee-iframe {
+.odysee-iframe {
 	position: fixed;
 	right: 0;
 	bottom: 0;
