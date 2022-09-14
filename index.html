@@ -1,103 +1,96 @@
 <!DOCTYPE HTML>
 <html>
 
-	<head>
-		<title>Digitalwish - Web and Design</title>
-		<meta name="description" content="Web Development and Design">
-  		<meta name="keywords" content="HTML, CSS, JavaScript, Vuejs, Design">
-  		<meta name="author" content="Digitalwish">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9742667869695241"
-     crossorigin="anonymous"></script>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+<head>
+	<title>Digitalwish - Web and Design</title>
+	<meta name="description" content="Web Development and Design">
+	<meta name="keywords" content="HTML, CSS, JavaScript, Vuejs, Design">
+	<meta name="author" content="Digitalwish">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9742667869695241"
+		crossorigin="anonymous"></script>
+</head>
 
+<body class="is-preload">
+	<div id="wrapper">
+		<div id="bg"></div>
+		<div id="overlay"></div>
+		<div id="main">
 
-				 
-				
-				<!-- Header -->
-				<video id = "myVideo" poster="assets/dw.png" playsinline >
-					<source src="assets/DWMotivation.mp4" type="video/mp4">
-				  </video>
+			<!-- Header -->
+			<video id="myVideo" poster="assets/dw.png" playsinline>
+				<source src="assets/DWMotivation.mp4" type="video/mp4">
+			</video>
 
-			<!--	<iframe id="odysee-iframe" src="https://odysee.com/$/embed/Introduction/b68721b96828229a4665b7156a3bd0885f940aba?r=9hfd4b6LWi9ZZShzyt3p6qq58k7BL95g?start=0&end=68;rel=0&amp;showinfo=0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0%;left:0px;bottom:0px !important" height="100%" width="100%"></iframe>
-				-->	
-				<div style="
-				float:left;">
-				<button class="fa fa-menu" style="
-				font-size:larger;
-				
-			">Menu</button>
-
-			<button id="playpause" type="button" name="playButton" onclick="setPlayPause()" class="fa fa-play" style="
-			font-size: larger
-			" >Play</button>
-				</div>
-				
-
-
-				<header id="header"  style = "top:-40%;right:2%;">
-					<span class="copyright"><a href="https://digitalwish.pt" target = "_blank">&copy DigitalWish</a>&nbsp;&bull;&nbsp;All rights reserved</span>
-						<nav>
-							<ul>
-								<li><a href="https://digitalwish.pt/" class="fa fa-link" target="_blank"><span class="label">Digitalwish.pt</span></a></li>
-								<li><a href="https://www.linkedin.com/company/82989159/admin/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:hi@digitalwish.pt" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
-								<li><a href="https://www.facebook.com/digitalwish.pt/" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
-								<li><a href="https://github.com/Digitalwish" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
-								<li><a href="https://discord.gg/f3w8AJ5X3h" class="icon brands fa-discord" target="_blank"><span class="label">Discord</span></a></li>
-								
-							</ul>
-						</nav>	
-					</header>
-
+			<div style="float:left;">
+				<button class="fa fa-menu" style="font-size:larger;">Menu</button>
+				<button id="playpause" type="button" name="playButton" onclick="setPlayPause()" class="fa fa-play"
+					style="font-size: larger">Play</button>
 			</div>
-		</div>
-		<script>
-var playpause = false;
-			
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		
-			var vid = document.getElementById("myVideo");
-			let btn = document.querySelector("button");
-			let div = document.querySelector("header");
-			btn.addEventListener("click", () => {
-  			if (div.style.display === "none") {
-				div.style.display = "inline-block";
-  }			 else {
-    		div.style.display = "none";
-			
-  }		
-});
-			
-			function setPlayPause()
-			{	
-				
-				// Here we toggle playpause from true to false and vice versa
-				playpause = !playpause;
-				if(playpause)
-				{
-					document.getElementById("playpause").value = "Play";
-					vid.play();
-				}
-				else
-				{
-					document.getElementById("playpause").value = "Pause";
-					vid.pause();
-				}
-			}
-		
-    		
 
-		</script>
-	</body>
+
+
+			<header id="header" style="top:-40%;right:2%;">
+				<span class="copyright"><a href="https://digitalwish.pt" target="_blank">&copy
+						DigitalWish</a>&nbsp;&bull;&nbsp;All rights reserved</span>
+				<nav>
+					<ul>
+						<li><a href="https://digitalwish.pt/" class="fa fa-link" target="_blank"><span
+									class="label">Digitalwish.pt</span></a></li>
+						<li><a href="https://www.linkedin.com/company/82989159/admin/" class="icon brands fa-linkedin"
+								target="_blank"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:hi@digitalwish.pt" class="icon solid fa-envelope" target="_blank"><span
+									class="label">Email</span></a></li>
+						<li><a href="https://www.facebook.com/digitalwish.pt/" class="icon brands fa-facebook-f"
+								target="_blank"><span class="label">Facebook</span></a></li>
+						<li><a href="https://github.com/Digitalwish" class="icon brands fa-github" target="_blank"><span
+									class="label">Github</span></a></li>
+						<li><a href="https://discord.gg/f3w8AJ5X3h" class="icon brands fa-discord" target="_blank"><span
+									class="label">Discord</span></a></li>
+					</ul>
+				</nav>
+			</header>
+			<!-- Header -->
+		</div>
+	</div>
+
+	<!-- Scripts JS Made by RicardodsR -->
+	<script>
+		var playpause = false;
+
+		window.onload = function () { document.body.classList.remove('is-preload'); }
+		window.ontouchmove = function () { return false; }
+		window.onorientationchange = function () { document.body.scrollTop = 0; }
+
+		var vid = document.getElementById("myVideo");
+		let btn = document.querySelector("button");
+		let div = document.querySelector("header");
+		btn.addEventListener("click", () => {
+			if (div.style.display === "none") {
+				div.style.display = "inline-block";
+			} else {
+				div.style.display = "none";
+
+			}
+		});
+
+		function setPlayPause() {
+			playpause = !playpause;
+			if (playpause) {
+				document.getElementById("playpause").value = "Play";
+				vid.play();
+			}
+			else {
+				document.getElementById("playpause").value = "Pause";
+				vid.pause();
+			}
+		}    		
+	</script>
+</body>
+
 </html>
