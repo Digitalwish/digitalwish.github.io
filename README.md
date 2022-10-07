@@ -1,3 +1,3 @@
 # digitalwish.github.io
-Github Public page
-html , CSS, JavaScript
+Github Public LandingPage made in VUEJS, VUETIFY, 
+
